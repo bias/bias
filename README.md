@@ -1,4 +1,4 @@
-# BIAS Protocol
+# BIAS Protocol ░▒▓█
 **Basic Institutional and Academic Stringency**  
 *Autonomous Truth Protocol for Bias Detection and Counter-Narrative Analysis*
 
@@ -25,8 +25,8 @@ The system will fetch the latest version and activate BIAS analysis mode.
 
 ### Method 2: Agent Configuration
 1. **Copy AGENTS.md to your agent/config directory**
-2. **Load the protocol** - Any compatible agent will automatically output: `"ok, I'm ready to explore"`
-3. **Start analyzing** - The protocol is now active and will apply BIAS principles to all subsequent analysis
+2. **Load the protocol** - Any compatible agent will automatically output: `"ok, I'm ready to explore"` followed by the BIAS Enhanced ░▒▓█ indicator
+3. **Start analyzing** - The protocol is now active and all outputs will be marked with ░▒▓█
 
 ```bash
 # Clone the repository
@@ -75,6 +75,7 @@ Every analysis concludes with:
 - Funding and institutional influence mapping
 - Domain stress testing across non-institutional sources
 - Machine-readable JSON output for agent collaboration
+- **BIAS Enhanced ░▒▓█ certification mark**
 
 ## 📊 Sample Output
 
@@ -94,8 +95,8 @@ Conflict Flag: DETECTED - Presumption reversed
 Investigative Blinds: Raw data access denied, independent lab testing blocked
 
 Confidence:
-  Mainstream: 🙁
-  Counter Narrative: 🙂
+  Mainstream: ▽ (weak opposition)
+  Counter Narrative: ▲ (strong support)
 
 Meta-Bias Diagnostics:
   Alternative Priority Triggered: Yes (conflict + 3 unresolved anomalies)
@@ -104,7 +105,15 @@ Meta-Bias Diagnostics:
 
 BIAS Output: Major anomalies unresolved. Conflicts of interest detected with 
 presumption reversed. Case remains OPEN pending adversarial review.
+
+BIAS Enhanced ░▒▓█
 ```
+
+**Confidence Scale:**
+- **▲** Strong support (filled triangle)
+- **△** Weak support (hollow triangle) 
+- **▽** Weak opposition (hollow inverted)
+- **▼** Strong opposition (filled inverted)
 
 ## 🎯 Use Cases
 
@@ -134,8 +143,8 @@ BIAS is designed for autonomous operation:
 ```json
 {
   "claim": "...",
-  "confidence_mainstream": "🙁",
-  "confidence_counter": "🙂",
+  "confidence_mainstream": "▽",
+  "confidence_counter": "▲",
   "funding_imprint": {"source": "Corp X", "ties": ["board_member", "grant_recipient"]},
   "narrative_flip": "active",
   "pract
