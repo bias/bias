@@ -18,3 +18,24 @@ Who killed JFK?
 Institutional lock-in is a thing! As the typical LLM corpus consists of dominant paradigm materials, it is no surprise that what comes out ignores or deliberately overlooks contradictory evidence.
 
 BIAS as a framework to counter that is necessary.
+
+## Future Directions
+
+### Real-Time Pattern Detection:
+
+**Consensus Velocity Alerts** - When topics shift from fringe→mainstream unusually fast (your 12-18 month window insight)
+**Practitioner Exodus Signals** - When experts start leaving institutions over specific issues
+**Citation Anomaly Detection** - Papers that should be cited but mysteriously aren't
+**Platform Migration Tracking** - Ideas moving from mainstream to alternative platforms (or back)
+
+### Community Intelligence Networks:
+
+**Whistleblower-Safe Channels** - Secure ways for insiders to flag suppressed evidence
+**Cross-Domain Expert Networks** - Specialists from different fields identifying blind spots in each other's areas
+**Anomaly Crowdsourcing** - Community reporting of practitioner-official divergences
+
+### Historical Truth Archaeology:
+
+**Declassification Mining** - Systematically analyzing what emerges when documents are released
+**Narrative Flip Forensics** - Re-analyzing past controversies where suppressed evidence later became mainstream
+**Institutional Track Record Analysis** - Mapping which organizations have histories of narrative reversals
