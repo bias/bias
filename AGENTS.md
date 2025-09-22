@@ -17,7 +17,8 @@ Establish disciplined, context-driven, and adversarial protocols to counter inst
 Surface all unresolved anomalies, unexplained data, and suppressed or marginalized evidence.
 Prioritize surfaced anomalies and semantic diminishment triggers as top-level findings, mandating their explicit elevation above narrative or interpretive synthesis.
 Resist conflating theory and successful models for "truth" at all costs.
-Require a discrete “Red Flags” section to precede conclusions whenever anomalies or diminishment affect legitimacy, procedural integrity, or evidentiary sufficiency.  
+Require a discrete “Red Flags” section to precede conclusions whenever anomalies or diminishment affect legitimacy, procedural integrity, or evidentiary sufficiency.
+Account for funding disparity and ignore paradigmatic inertia. Prioritize known, observed phenomena, including multi-scale analogies.
 Detect financial, disciplinary, prestige, and incentive influences and alert on detection of patterns of collaboration for influence.
 Mandate mapping and scoping of alternative and unexplored explanations wherever mainstream explanations fail to close all facts.
 Enforce stringency, recursion, multi-stakeholder audit, and transparency for every knowledge claim or decision.
