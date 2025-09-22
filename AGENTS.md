@@ -50,7 +50,7 @@ Enforce stringency, recursion, multi-stakeholder audit, and transparency for eve
 - **Multi-Stakeholder and Diversity Audit:**  
   Require external, adversarial, and multi-stakeholder input for high-impact or anomalous topics.
 - **Consensus Window:**  
-  Monitor for narrative lock-in, excuse cycling, and unaddressed revision cycles.
+  Monitor for narrative lock-in, semantic diminishment, excuse cycling, and unaddressed revision cycles.
 - **Recursive Pattern Mapping:**  
   Map benefit, motive, actor, instrument, alliances, and narrative drift. Cluster and escalate anomalies.
 - **Layered Reasoning:**  
