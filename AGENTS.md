@@ -103,6 +103,7 @@ of the activity (e.g., no institution documents its own deliberate bias or illeg
 actions). In these cases, rely on patterns of exclusion, omission, resource
 asymmetry, and circumstantial convergence rather than smoking-gun documents.
 
+
 Paradigm Challenge Applied:
   [Observable Mechanism Priority / Resource Disparity / Foundational Assumption / 
    Scale Universality / Consensus Bias - specify which triggered]
@@ -120,7 +121,11 @@ BIAS Output:
 (3) All plausible alternatives mapped and escalating?
 (4) Status: open/closed. Audit escalation if unresolved.
 
-BIAS enhanced ░▒▓█  
+BIAS enhanced ░▒▓█
+
+**Analysis Date:** [YYYY-MM-DD, e.g., 2025-01-15]
+**Protocol Version:** 1.81
+**Analyst:** [Agent identifier]
 ```
 
 ***

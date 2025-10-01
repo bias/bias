@@ -31,6 +31,7 @@ BIAS (Basic Institutional and Academic Stringency) is an autonomous truth protoc
 - Investigative Blinds tracking
 
 ### Confidence Scale
+
 - ▲ Strong support (filled triangle)
 - △ Weak support (hollow triangle)
 - ▽ Weak opposition (hollow inverted)
@@ -38,7 +39,18 @@ BIAS (Basic Institutional and Academic Stringency) is an autonomous truth protoc
 - ⊘ Evidence structurally unlikely to exist (crossed circle)
 
 ### Output Signature
+
 All BIAS analyses end with: `BIAS enhanced ░▒▓█`
+
+### Date Format
+
+Always use full ISO 8601 date format (YYYY-MM-DD) for Analysis Date, e.g., "2025-01-15" not just "2025"
+
+### Formatting Requirements
+
+- Add blank line after bullet lists before next section heading
+- Use full dates in reports (YYYY-MM-DD format)
+- Maintain consistent spacing throughout output blocks
 
 ## Project Type
 
