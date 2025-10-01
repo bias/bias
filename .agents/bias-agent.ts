@@ -3,10 +3,19 @@ import type { AgentDefinition } from './types/agent-definition'
 const definition: AgentDefinition = {
   id: 'bias-agent',
   displayName: 'BIAS Protocol Agent',
-  model: 'anthropic/claude-3-5-sonnet-20241022',
+  model: 'anthropic/claude-opus-4.1',
   
   toolNames: [
-    'read_files'
+    'read_files',
+    'web_search',
+    'read_docs',
+    'spawn_agents'
+  ],
+
+  spawnableAgents: [
+    'codebuff/researcher@0.0.4',
+    'codebuff/file-picker@0.0.4',
+    'local-directory-bias-scanner'
   ],
 
   spawnerPrompt: `Spawn this agent when you need to analyze content for institutional or academic bias, 
