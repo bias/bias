@@ -52,6 +52,16 @@ This is a **documentation/protocol project** - no code compilation, build proces
 
 Workaround: Apply BIAS protocol manually or spawn researcher first, then analyze results with BIAS framework.
 
+## Important Clarifications
+
+**BIAS is NOT Binary**: The protocol does not declare content as "biased" or "unbiased." Rather, it:
+- Identifies **indicators that warrant suspicion** of institutional bias
+- Flags commonly overlooked patterns (funding sources, suppressive language, missing alternatives)
+- Creates **conditions for investigation**, not final judgments
+- Operates on a confidence spectrum (▲ △ ▽ ▼), not binary classification
+
+The goal is to surface what is typically hidden or dismissed, not to pronounce definitive verdicts on bias.
+
 ## Philosophy Highlights
 
 **Leakage Check**: Final safeguard against unconscious bias from training data - questions whether the agent is "puppeting someone else's unchallenged assumptions."
