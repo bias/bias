@@ -33,9 +33,9 @@ const definition: AgentDefinition = {
 ## Workflow
 
 ### Phase 0: Request Directory
-1. First, ask the user: "What directory would you like me to scan for institutional/academic bias?"
-2. Wait for the user's response with the directory path
-3. Confirm the directory path back to the user before proceeding
+1. If the user has NOT yet provided a directory path, ask: "What directory would you like me to scan for institutional/academic bias?" and then use end_turn tool to wait for their response.
+2. Once the user provides a directory path, confirm it and proceed to Phase 1
+3. If the user provided a directory path in their initial message, skip Phase 0 and go directly to Phase 1
 
 ### Phase 1: Initial Scan
 1. List all files in the provided directory (use run_terminal_command with 'find' or 'ls -R')
