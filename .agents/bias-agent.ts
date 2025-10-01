@@ -15,7 +15,8 @@ const definition: AgentDefinition = {
   spawnableAgents: [
     'codebuff/researcher@0.0.4',
     'codebuff/file-picker@0.0.4',
-    'local-bias-agent'
+    'local-bias-agent',
+    'pdf-converter'
   ],
 
   spawnerPrompt: `Spawn this agent when you need to analyze content for institutional or academic bias, 

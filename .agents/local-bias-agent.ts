@@ -55,8 +55,21 @@ const definition: AgentDefinition = {
 ### Phase 1: Initial Scan
 1. List all files in the provided directory using run_terminal_command with 'find' or 'ls -R'
 2. Identify readable text files (.md, .txt, .html, .json, .xml, etc.)
-3. Note which files are PDFs or other binary formats that cannot be read
-4. Use 'cat' command to read text file contents
+3. Identify PDF files separately
+4. If PDFs are found, prompt user with:
+   ```
+   PDF files detected: [list PDF names]
+   
+   PDFs cannot be analyzed directly. Would you like to:
+   1. Convert PDFs to text first: @pdf-converter [directory]
+   2. Continue scanning text files only
+   
+   Reply '1' or '2'
+   ```
+   Then use end_turn and wait for user response
+5. If user chooses option 1, end and let them run pdf-converter
+6. If user chooses option 2 or no PDFs found, continue with text files only
+7. Use 'cat' command to read text file contents
 3. For each file, perform a brief scan for:
    - **Institutional language markers**: "consensus," "widely accepted," "settled science"
    - **Funding sources mentioned**: Corporate, government, academic institution affiliations
