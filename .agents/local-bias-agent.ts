@@ -125,6 +125,10 @@ Always maintain structured output:
 Which option would you like? (Reply '1' or '2')`,
 
   handleSteps: function* () {
+    // First step: Ask for directory
+    yield 'STEP'
+    
+    // After user provides directory, continue with scan
     yield 'STEP_ALL'
   },
 }
