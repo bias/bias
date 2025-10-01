@@ -23,10 +23,10 @@ const definition: AgentDefinition = {
     }
   },
 
-  spawnerPrompt: `Spawn when you need to scan a local directory for potential bias in academic or institutional content. 
-  The agent will analyze all readable files, identify bias conditions, and offer two paths: 
-  1) Copy flagged files to a 'bias' folder for in-depth analysis with full report
-  2) Provide in-situ analysis of each flagged item one by one`,
+  spawnerPrompt: `DO NOT spawn this agent with spawn_agents - the user should invoke it directly with @local-bias-agent.
+  This agent requires interactive user input and must be invoked inline to function properly.`,
+  
+  includeMessageHistory: true,
 
   instructionsPrompt: `You are a Local Directory BIAS Scanner for academic content analysis.
 
