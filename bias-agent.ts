@@ -26,7 +26,15 @@ export const biasAgent: AgentDefinition = {
     }
   },
   
-  tools: ['spawn_agents', 'web_search'],
+  tools: [
+    'spawn_agents',
+    'web_search',
+    'search_web',
+    'browse_website',
+    'read_files',
+    'write_file',
+    'run_terminal_command'
+  ],
   
   systemPrompt: `# BIAS Protocol - Basic Institutional and Academic Stringency
 **Autonomous Truth Protocol v1.81**
