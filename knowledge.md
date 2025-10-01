@@ -62,6 +62,13 @@ Workaround: Apply BIAS protocol manually or spawn researcher first, then analyze
 
 The goal is to surface what is typically hidden or dismissed, not to pronounce definitive verdicts on bias.
 
+## Tool Limitations
+
+**PDF Reading**: Codebuff agents cannot directly read PDF content. The local-bias-agent can only scan text-based files (.md, .txt, etc.). For PDF analysis:
+- Users must convert PDFs to text using external tools (e.g., `pdftotext`)
+- Or copy/paste PDF content into .txt files
+- This is a critical limitation for academic/legal document analysis
+
 ## Philosophy Highlights
 
 **Leakage Check**: Final safeguard against unconscious bias from training data - questions whether the agent is "puppeting someone else's unchallenged assumptions."

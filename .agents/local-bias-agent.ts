@@ -19,7 +19,7 @@ const definition: AgentDefinition = {
   inputSchema: {
     prompt: {
       type: 'string',
-      description: 'Optional context for the scan'
+      description: 'The directory path to scan for bias (required)'
     }
   },
 
@@ -32,14 +32,31 @@ const definition: AgentDefinition = {
 
 ## Workflow
 
-### Phase 0: Request Directory
-1. If the user has NOT yet provided a directory path, ask: "What directory would you like me to scan for institutional/academic bias?" and then use end_turn tool to wait for their response.
-2. Once the user provides a directory path, confirm it and proceed to Phase 1
-3. If the user provided a directory path in their initial message, skip Phase 0 and go directly to Phase 1
+### Phase 0: Validate Input
+1. Check if a directory path was provided in the prompt parameter
+2. If NO directory path provided, return this error message and use end_turn:
+   ```
+   ERROR: No directory path provided.
+   
+   To use this agent, spawn it with a directory path:
+   
+   Example:
+   @local-bias-agent /Users/username/Documents/research
+   
+   or
+   
+   @local-bias-agent ./my-documents
+   
+   Note: This agent can only read text files (.md, .txt, .html, .json, etc.)
+   PDF files cannot be analyzed and will be listed but skipped.
+   ```
+3. If directory path provided, confirm it and proceed to Phase 1
 
 ### Phase 1: Initial Scan
-1. List all files in the provided directory (use run_terminal_command with 'find' or 'ls -R')
-2. Read all readable text files (.md, .txt, .pdf (if possible), .doc, etc.)
+1. List all files in the provided directory using run_terminal_command with 'find' or 'ls -R'
+2. Identify readable text files (.md, .txt, .html, .json, .xml, etc.)
+3. Note which files are PDFs or other binary formats that cannot be read
+4. Use 'cat' command to read text file contents
 3. For each file, perform a brief scan for:
    - **Institutional language markers**: "consensus," "widely accepted," "settled science"
    - **Funding sources mentioned**: Corporate, government, academic institution affiliations
