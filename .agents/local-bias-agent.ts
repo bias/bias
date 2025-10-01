@@ -1,8 +1,8 @@
 import type { AgentDefinition } from './types/agent-definition'
 
 const definition: AgentDefinition = {
-  id: 'local-directory-bias-scanner',
-  displayName: 'Local Directory BIAS Scanner',
+  id: 'local-bias-agent',
+  displayName: 'Local BIAS Agent',
   model: 'anthropic/claude-opus-4.1',
   
   toolNames: [
