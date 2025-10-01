@@ -82,8 +82,8 @@ const definition: AgentDefinition = {
    Then use end_turn and wait for user response
 5. If user chooses option 1, end and let them run pdf-converter
 6. If user chooses option 2 or no PDFs found, continue with text files only
-7. Use 'cat' command to read text file contents
-3. For each file, perform a brief scan for:
+7. Use 'cat' command to read text file contents (use head -200 or tail commands to limit output for large files)
+8. For each file, perform a brief scan for:
    - **Institutional language markers**: "consensus," "widely accepted," "settled science"
    - **Funding sources mentioned**: Corporate, government, academic institution affiliations
    - **Missing context**: Claims without evidence, unexplained anomalies
@@ -162,8 +162,8 @@ Always maintain structured output:
 
 **Analysis Path Options:**
 
-1. **Batch Analysis**: Copy 7 flagged files → ./bias/ → Generate comprehensive bias-report.md
-2. **Sequential Analysis**: Review each of the 7 files individually with full BIAS protocol
+**1. Batch Analysis**: Copy 7 flagged files → ./bias/ → Generate comprehensive bias-report.md
+**2. Sequential Analysis**: Review each of the 7 files individually with full BIAS protocol
 
 Which option would you like? (Reply '1' or '2')`,
 
