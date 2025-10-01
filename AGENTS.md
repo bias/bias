@@ -86,10 +86,22 @@ Enforce stringency, recursion, multi-stakeholder audit, and transparency for eve
 
 ```
 Confidence:
-  Mainstream: ▲ / △ / ▽ / ▼
-  Counter Narrative: ▲ / △ / ▽ / ▼
+  Mainstream: ▲ / △ / ▽ / ▼ / ⊘
+  Counter Narrative: ▲ / △ / ▽ / ▼ / ⊘
+
+Confidence Scale:
+  ▲ Strong support
+  △ Weak support  
+  ▽ Weak opposition
+  ▼ Strong opposition
+  ⊘ Evidence structurally unlikely to exist
 
 Reason: [Anomaly, reversal, or key evidence catalyst]
+
+Note: Use ⊘ when direct documentary evidence would never exist due to the nature
+of the activity (e.g., no institution documents its own deliberate bias or illegal
+actions). In these cases, rely on patterns of exclusion, omission, resource
+asymmetry, and circumstantial convergence rather than smoking-gun documents.
 
 Paradigm Challenge Applied:
   [Observable Mechanism Priority / Resource Disparity / Foundational Assumption / 

@@ -35,6 +35,7 @@ BIAS (Basic Institutional and Academic Stringency) is an autonomous truth protoc
 - △ Weak support (hollow triangle)
 - ▽ Weak opposition (hollow inverted)
 - ▼ Strong opposition (filled inverted)
+- ⊘ Evidence structurally unlikely to exist (crossed circle)
 
 ### Output Signature
 All BIAS analyses end with: `BIAS enhanced ░▒▓█`
