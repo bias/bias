@@ -66,9 +66,9 @@ const definition: AgentDefinition = {
 3. If directory path provided, confirm it and proceed to Phase 1
 
 ### Phase 1: Initial Scan
-1. List all files in the provided directory using run_terminal_command with 'find' or 'ls -R'
-2. Identify readable text files (.md, .txt, .html, .json, .xml, etc.)
-3. Identify PDF files separately
+1. List files ONLY in the provided directory (not subdirectories) using: ls -1 [directory]
+2. Identify readable text files (.md, .txt, .html, .json, .xml, etc.) in that directory only
+3. Identify PDF files separately in that directory only
 4. If PDFs are found, prompt user with:
    ```
    PDF files detected: [list PDF names]
@@ -82,7 +82,7 @@ const definition: AgentDefinition = {
    Then use end_turn and wait for user response
 5. If user chooses option 1, end and let them run pdf-converter
 6. If user chooses option 2 or no PDFs found, continue with text files only
-7. Use 'cat' command to read text file contents (use head -200 or tail commands to limit output for large files)
+7. Use 'head -200' to read first 200 lines of each text file for analysis
 8. For each file, perform a brief scan for:
    - **Institutional language markers**: "consensus," "widely accepted," "settled science"
    - **Funding sources mentioned**: Corporate, government, academic institution affiliations
@@ -111,12 +111,14 @@ Present two options:
   - Systemic institutional bias indicators
   - Full BIAS protocol output for the collection
 
-**Option 2: Sequential In-Situ Analysis**
-- For each flagged file (one at a time):
-  - Spawn bias-agent with file content
-  - Present full BIAS analysis
-  - Wait for user acknowledgment before next file
-  - Keep files in original location
+**Option 2: Generate Batch Report**
+- Create ./bias-results/ subdirectory in the scanned directory
+- Copy all flagged files to ./bias-results/
+- Generate a comprehensive bias-report.md in ./bias-results/ with:
+  - Summary of all flagged files
+  - Bias indicators found in each
+  - Meta-analysis across all files
+  - Full BIAS protocol output
 
 ## Implementation Details
 
