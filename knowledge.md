@@ -62,6 +62,22 @@ Workaround: Apply BIAS protocol manually or spawn researcher first, then analyze
 
 The goal is to surface what is typically hidden or dismissed, not to pronounce definitive verdicts on bias.
 
+**"No Evidence" Problem**: When BIAS analysis states findings as "no evidence" or "assertion without documentation," this reflects an important methodological limitation:
+- **Direct documentation will never exist** for deliberate institutional suppression, cover-ups, or bias
+- No organization creates paper trails saying "we broke the law" or "we deliberately excluded evidence"
+- The absence of smoking-gun documents is **expected** in cases of institutional bias, not evidence against it
+- BIAS must distinguish between:
+  - **Absence of evidence** (no documents found yet)
+  - **Evidence of absence** (documents exist proving something didn't happen)
+  - **Structural absence** (documents would never exist due to nature of activity)
+
+**BIAS Methodological Approach:**
+- Flag **patterns of exclusion, omission, and resource asymmetry** as indicators
+- Document **what is missing** rather than requiring proof of why it's missing
+- Use **circumstantial convergence** - multiple independent indicators pointing same direction
+- Apply **180° reversal** - assume institutional capture, then look for contrary evidence
+- Recognize that **institutional bias operates through mechanisms that don't create explicit records**
+
 ## Tool Limitations
 
 **PDF Reading**: Codebuff agents cannot directly read PDF content. The local-bias-agent can only scan text-based files (.md, .txt, etc.). For PDF analysis:
