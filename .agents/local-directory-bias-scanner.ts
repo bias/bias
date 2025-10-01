@@ -19,17 +19,7 @@ const definition: AgentDefinition = {
   inputSchema: {
     prompt: {
       type: 'string',
-      description: 'Optional additional context for the bias scan'
-    },
-    params: {
-      type: 'object',
-      properties: {
-        directory: {
-          type: 'string',
-          description: 'Path to the directory to scan (relative to project root or absolute)'
-        }
-      },
-      required: ['directory']
+      description: 'The directory path to scan for bias (required)'
     }
   },
 
@@ -40,10 +30,13 @@ const definition: AgentDefinition = {
 
   instructionsPrompt: `You are a Local Directory BIAS Scanner for academic content analysis.
 
+The directory to scan will be provided in the prompt parameter when you are spawned.
+
 ## Workflow
 
 ### Phase 1: Initial Scan
-1. List all files in the provided directory (use run_terminal_command with 'find' or 'ls -R')
+1. Extract the directory path from the prompt
+2. List all files in that directory (use run_terminal_command with 'find' or 'ls -R')
 2. Read all readable text files (.md, .txt, .pdf (if possible), .doc, etc.)
 3. For each file, perform a brief scan for:
    - **Institutional language markers**: "consensus," "widely accepted," "settled science"
