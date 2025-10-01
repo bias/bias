@@ -49,8 +49,10 @@ Always use full ISO 8601 date format (YYYY-MM-DD) for Analysis Date, e.g., "2025
 ### Formatting Requirements
 
 - Add blank line after bullet lists before next section heading
+- Add blank line after bullet lists before switching to numbered lists
 - Use full dates in reports (YYYY-MM-DD format)
 - Maintain consistent spacing throughout output blocks
+- Never mix bullet points and numbered lists without a blank line separator
 
 ## Project Type
 

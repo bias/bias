@@ -74,6 +74,8 @@ Enforce stringency, recursion, multi-stakeholder audit, and transparency for eve
 
 ## BIAS Analysis Output Block
 
+**Conciseness Note:** Be direct and avoid redundancy. State findings once. Use bullet points for clarity but switch to narrative for complex explanations. Prioritize actionable insights over exhaustive documentation.
+
 **Start each analysis with:**
 
 - **Unresolved Anomalies:** [All unclosed observations, conflicting data, unexplained artifacts]
