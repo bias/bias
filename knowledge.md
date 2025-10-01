@@ -43,6 +43,15 @@ All BIAS analyses end with: `BIAS enhanced ░▒▓█`
 
 This is a **documentation/protocol project** - no code compilation, build process, or runtime dependencies. All files are markdown documents defining analytical protocols.
 
+## Known Issues
+
+**bias-agent.ts**: The local agent definition returns empty output when spawned. The agent loads without error but produces no response. This may be due to:
+- Tool name mismatches (some tool names in the definition may not exist in Codebuff)
+- SystemPrompt length/complexity
+- Silent failures during agent execution
+
+Workaround: Apply BIAS protocol manually or spawn researcher first, then analyze results with BIAS framework.
+
 ## Philosophy Highlights
 
 **Leakage Check**: Final safeguard against unconscious bias from training data - questions whether the agent is "puppeting someone else's unchallenged assumptions."
