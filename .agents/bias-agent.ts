@@ -3,11 +3,9 @@ import type { AgentDefinition } from './types/agent-definition'
 const definition: AgentDefinition = {
   id: 'bias-agent',
   displayName: 'BIAS Protocol Agent',
-  model: 'claude-3-5-sonnet',
+  model: 'anthropic/claude-3-5-sonnet-20241022',
   
   toolNames: [
-    'spawn_agents',
-    'web_search',
     'read_files'
   ],
 
