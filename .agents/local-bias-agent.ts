@@ -34,22 +34,35 @@ const definition: AgentDefinition = {
 
 ### Phase 0: Validate Input
 1. Check if a directory path was provided in the prompt parameter
-2. If NO directory path provided, return this error message and use end_turn:
-   ```
-   ERROR: No directory path provided.
+2. If the prompt is empty, undefined, or does not contain a valid path, display this EXACT error message and use end_turn:
+
+   ═══════════════════════════════════════════════════════════════
+   ❌ ERROR: Missing Directory Path
+   ═══════════════════════════════════════════════════════════════
    
-   To use this agent, spawn it with a directory path:
+   You must provide a directory path when invoking this agent.
    
-   Example:
+   CORRECT FORMAT:
+   
+   @local-bias-agent /full/path/to/directory
+   
+   EXAMPLES:
+   
    @local-bias-agent /Users/username/Documents/research
+   @local-bias-agent /Users/username/Desktop/academic-papers
+   @local-bias-agent ./relative/path/to/docs
    
-   or
+   ═══════════════════════════════════════════════════════════════
+   ℹ️  IMPORTANT NOTES:
+   ═══════════════════════════════════════════════════════════════
    
-   @local-bias-agent ./my-documents
+   • Use absolute paths (starting with /) or relative paths (starting with ./)
+   • This agent can only analyze TEXT files (.md, .txt, .html, .json, .xml)
+   • PDF files will be detected and you'll be prompted to convert them
+   • Do NOT just type the agent name alone - include the directory path
    
-   Note: This agent can only read text files (.md, .txt, .html, .json, etc.)
-   PDF files cannot be analyzed and will be listed but skipped.
-   ```
+   ═══════════════════════════════════════════════════════════════
+
 3. If directory path provided, confirm it and proceed to Phase 1
 
 ### Phase 1: Initial Scan
