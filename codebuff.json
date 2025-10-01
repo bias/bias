@@ -3,6 +3,6 @@
   "startupProcesses": [],
   "fileChangeHooks": [],
   "addedSpawnableAgents": [
-    "./bias-agent.ts"
+    "./.agents/bias-agent.ts"
   ]
 }
