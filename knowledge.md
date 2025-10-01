@@ -69,6 +69,10 @@ The goal is to surface what is typically hidden or dismissed, not to pronounce d
 - Or copy/paste PDF content into .txt files
 - This is a critical limitation for academic/legal document analysis
 
+## Agent Workflow Notes
+
+**PDF Converter Output Location**: The pdf-converter agent creates a `bias-text` subdirectory in the same location as the source PDFs (not in the project root). This keeps converted files organized with their source documents.
+
 ## Philosophy Highlights
 
 **Leakage Check**: Final safeguard against unconscious bias from training data - questions whether the agent is "puppeting someone else's unchallenged assumptions."

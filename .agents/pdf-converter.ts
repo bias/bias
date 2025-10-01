@@ -51,18 +51,19 @@ const definition: AgentDefinition = {
 4. If PDFs found, proceed to Phase 3
 
 ### Phase 3: Create Output Directory
-1. Create ./bias-text directory if it doesn't exist:
+1. Create bias-text directory IN THE SAME LOCATION as the source PDFs:
    \`\`\`bash
-   mkdir -p ./bias-text
+   mkdir -p "/source/directory/bias-text"
    \`\`\`
+   Example: If scanning /Users/username/Documents, create /Users/username/Documents/bias-text
 2. Confirm directory created
 
 ### Phase 4: Convert PDFs
 1. For each PDF file discovered:
    - Extract filename without extension
-   - Convert to text using pdftotext:
+   - Convert to text using pdftotext and save to bias-text subdirectory of source:
      \`\`\`bash
-     pdftotext "/full/path/to/file.pdf" "./bias-text/filename.txt"
+     pdftotext "/full/path/to/file.pdf" "/full/path/to/bias-text/filename.txt"
      \`\`\`
    - Report success/failure for each file
 
@@ -71,8 +72,8 @@ Provide:
 - **PDFs Found**: Total count
 - **Converted Successfully**: Count and list of filenames
 - **Failed Conversions**: Count and list with error details (if any)
-- **Output Directory**: ./bias-text
-- **Next Step**: Suggest running @local-bias-agent ./bias-text for analysis
+- **Output Directory**: /full/path/to/bias-text (subdirectory of source)
+- **Next Step**: Suggest running @local-bias-agent /full/path/to/bias-text for analysis
 
 ## Error Handling
 
@@ -90,13 +91,13 @@ PDF Conversion Complete
 - Brian_20250307_141613.pdf (400 KB)
 
 **Converted Successfully**: 2
-✓ Case-from-Brian-2025.txt (saved to ./bias-text/)
-✓ Brian_20250307_141613.txt (saved to ./bias-text/)
+✓ Case-from-Brian-2025.txt (saved to /source/directory/bias-text/)
+✓ Brian_20250307_141613.txt (saved to /source/directory/bias-text/)
 
 **Failed Conversions**: 0
 
 **Next Step**: Run BIAS analysis on converted text:
-@local-bias-agent ./bias-text
+@local-bias-agent /source/directory/bias-text
 \`\`\``,
 
 }
